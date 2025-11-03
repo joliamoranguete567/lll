@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class="navbar-brand" href="#home">Logo da empresa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#sobre">Apresentação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#localizacao">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--section Home-->
+    <section id="home" class="d-flex">
+        <div class="container">
+            <h1>Página Inicial</h1>
+            <p>Exemplo de Landing Page</p>
+            <!--<table class="table table-striped table-responsive-sm table-light table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Primeiro</th>
+                        <th>Último</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">www.teste.com.br</td>
+                    </tr>
+                </tfoot>
+            </table>-->
+
+            <a href="#sobre" class="btn btn-primary scroll-btn">Sobre a empresa</a>
+        </div>
+    </section>
+    <!--section Sobre-->
+    <section id="sobre" class="d-flex bg-light">
+        <div class="container text-center">
+            <h1>Sobre a empresa</h1>
+            <p>A empresa é...</p>
+            <a href="#contato" class="btn btn-success scroll-btn">Fale Conosco</a>
+        </div>
+    </section>
+
+    <!--section Localização-->
+    <section id="localizacao" class="d-flex bg-light">
+        <div class="container text-center">
+            <h1>Localização</h1>
+            <p>Inserir Google Maps aqui</p>
+            <a href="#home" class="btn btn-danger scroll-btn">Página Inicial</a>
+        </div>
+    </section>
+
+    <!--section Contato-->
+    <section id="contato" class="d-flex bg-light">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-md-6 col-sm-12">
+                    <h1>Fale Conosco</h1>
+                    <form id="meuFormulario">
+                        <div class="form-group">
+                            <label for="txtemail">Endereço de email</label>
+                            <input type="email" class="form-control" id="txtemail" placeholder="nome@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel_estadocivil">Estado Civil</label>
+                            <select class="form-control" id="sel_estadocivil" required>
+                                <option selected disabled>Escolha uma opção</option>
+                                <option value="Casado">Casado</option>
+                                <option value="Solteiro">Solteiro</option>
+                                <option value="Viúvo">Viúvo</option>
+                            </select>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="chkemail">
+                            <label class="form-check-label" for="chkemail">Quer receber email?</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <a href="#localizacao" class="btn btn-danger scroll-btn">Localização</a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>rodapé</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdngi.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
