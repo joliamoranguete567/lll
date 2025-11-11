@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 60px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home {
+  /*imagem de fundo no home*/
+  background: url("../img/fundo1.png") center center no-repeat;
+  background-size: cover;
+}
+
+#home h1 {
+  font-size: 4rem;
+}
+
+#home p {
+  font-size: 1.5rem;
+}
+
+.scroll-btn {
+  margin-top: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+nav.scrolled {
+  background-color: #333 !important;
+}
